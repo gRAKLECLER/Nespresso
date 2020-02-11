@@ -37,6 +37,7 @@
   &__capsule {
     &--first {
       position: absolute;
+      z-index: 1;
       top: 10%;
       width: 40%;
       border: 1px solid violet;
@@ -44,7 +45,7 @@
     &--second {
       position: absolute;
       top: 45%;
-      left: 30%;
+      left: 35%;
       width: 25%;
       border: yellow 1px solid;
       transform: rotate(-47deg);
@@ -52,10 +53,21 @@
     &--third {
       position: absolute;
       top: 30%;
-      left: 55%;
+      left: 65%;
       width: 15%;
       border: yellow 1px solid;
       transform: rotate(-151deg);
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__blob {
+    &--first {
+      position: absolute;
+      width: 40%;
     }
   }
 }
