@@ -2,9 +2,8 @@ $Primary-color: #ee704a;
 
 .hero {
   width: 100vw;
-  height: 90vh;
+  height: 70vh;
   display: flex;
-  border: 1px solid red;
 
   &__texts {
     width: 60%;
@@ -49,6 +48,7 @@ $Primary-color: #ee704a;
   &__container {
     display: flex;
     width: 95%;
+    height: auto;
   }
 
   &__mainBlob {
@@ -56,6 +56,22 @@ $Primary-color: #ee704a;
     z-index: -1;
     top: -20%;
     left: 30%;
+
+    &--second {
+      position: absolute;
+      width: 50%;
+      height: 80%;
+      top: -20%;
+      left: -30%;
+    }
+    &--third {
+      z-index: -2;
+      position: absolute;
+      width: 60%;
+      top: -60%;
+      left: 60%;
+      transform: rotate(-10deg);
+    }
   }
 
   &__content {
@@ -69,7 +85,7 @@ $Primary-color: #ee704a;
     }
     &--third {
       position: relative;
-      width: 10%;
+      width: 20%;
     }
   }
 
@@ -79,7 +95,7 @@ $Primary-color: #ee704a;
       z-index: 1;
       top: 10%;
       width: 70%;
-      left: 0;
+      left: 35%;
       right: 0;
       margin: auto;
       background-image: url(../img/blob.svg);
@@ -102,9 +118,9 @@ $Primary-color: #ee704a;
       position: absolute;
       top: 30%;
       left: 0;
-      right: 0;
+      right: 50%;
       margin: auto;
-      width: 100%;
+      width: 70%;
       transform: rotate(-151deg);
       background-image: url(../img/blob.svg);
       background-size: 100%;
