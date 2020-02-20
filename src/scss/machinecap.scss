@@ -1,0 +1,45 @@
+.machine {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+    &--picleft {
+      width: 40%;
+    }
+  }
+  &__middle {
+    position: relative;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    &--picmiddle {
+      width: 90%;
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+    &--picright {
+      width: 60%;
+    }
+  }
+  &__content {
+    position: absolute;
+    height: 30vh;
+  }
+
+  &--middle {
+    right: 35px;
+  }
+}
